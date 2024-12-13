@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benny Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 2rem 1rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            overflow: hidden;
+            position: relative;
+        }
+        header p span {
+            display: inline-block;
+            animation: fadeSlideGrow 3s ease-in-out infinite;
+            opacity: 0;
+            transform-origin: center;
+        }
+        header p span:nth-child(1) {
+            animation-delay: 0s;
+        }
+        header p span:nth-child(2) {
+            animation-delay: 1s;
+        }
+        header p span:nth-child(3) {
+            animation-delay: 2s;
+        }
+        header p span:nth-child(4) {
+            animation-delay: 3s;
+        }
+        header p span:nth-child(5) {
+            animation-delay: 4s;
+        }
+        @keyframes fadeSlideGrow {
+            0% {
+                opacity: 0;
+                transform: translateY(30px) scale(0.8);
+            }
+            50% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-30px) scale(1.2);
+            }
+        }
+        nav {
+            text-align: center;
+            margin-top: 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        section {
+            padding: 2rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .about, .projects, .contact {
+            margin-bottom: 2rem;
+        }
+        .about h2, .contact h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .projects h3{
+            font-size: 2rem;
+            margin-bottom: 0px;
+            margin-top: +200px;
+        }
+        .about p {
+            line-height: 1.6;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            text-align: center;
+            margin-top: 1rem;
+            margin-top: -200px;
+    
+        }
+        .projects h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        .project {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s;
+            margin-top:-140px ;
+        }
+        .project:hover {
+            transform: scale(1.05);
+        }
+        .project img {
+            width: 100%;
+            height: auto;
+        }
+        .project h3 {
+            margin: 0;
+            padding: 1rem;
+            background: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+        .project h3 button {
+            padding: 0.5rem 1rem;
+            border: none;
+            background: #2575fc;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .project h3 button:hover {
+            background: #6a11cb;
+        }
+        .contact {
+            text-align: center;
+        }
+        .contact img.photo-frame {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #2575fc;
+            margin-bottom: 1rem;
+        }
+        .contact ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            align-items: center;
+        }
+        .contact ul li {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .contact ul li a {
+            text-decoration: none;
+            color: #2575fc;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .contact ul li a:hover {
+            color: #6a11cb;
+        }
+        .contact ul li img {
+            width: 24px;
+            height: 24px;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #f4f4f4;
+            margin-top: 2rem;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BENNY SOLOMON S</h1>
+        <p>
+            <span>Web Developer</span>
+            <span>Designer</span>
+            <span>Problem Solver</span>
+            <span>Circuit Designer</span>
+            <span>Board Programming STM32, Arduino, ESP32</span>
+            <span>Data Science</span>
+        </p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            Hello! I'm BENNY SOLOMON S, I’m a Web Developer, Designer, and Problem Solver with expertise in Circuit Design, Embedded Programming (STM32, Arduino, ESP32), and Data Science. I create innovative solutions, blending technology and creativity to bring ideas to life. Let’s build something exceptional together! </p>
+    </section>
+
+    <section id="projects" class="projects"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h3>My Projects</h3><br>
+        <div class="project">
+            <img src="p1.png" alt="Project 1">
+            <h3>
+                Dashboard
+                <button onclick="location.href='https://automatted-watertankmanagementsystem-innotrat-hackathon.streamlit.app/'">View</button>
+                <button onclick="location.href='https://github.com/Benny-752/automatted-_water_tank_management_system'">Code</button>
+            </h3>
+        </div>
+        <div class="project">
+            <img src="p2.png" alt="Project 2">
+            <h3>
+                Application
+                <button onclick="location.href='https://github.com/Benny-752/library-management-application/blob/main/home.png'">View</button>
+                <button onclick="location.href='https://github.com/Benny-752/library-management-application'">Code</button>
+            </h3>
+        </div>
+        <div class="project">
+            <img src="p3.jpeg" alt="Project 3">
+            <h3>
+                Arduino
+                <button onclick="location.href='#'">View</button>
+                <button onclick="location.href='https://github.com/Benny-752/herb_monitoring_system'">Code</button>
+            </h3>
+        </div>
+    </section>
+    
+    <br> <!-- Added break after Projects section -->
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <img class="photo-frame" src="BENNY-29-04.PNG" alt="Your Photo">
+        <ul>
+            <li><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"><a href="https://www.linkedin.com/in/benny-solomon-19b44a217/" target="_blank">LinkedIn</a></li>
+            <li><?xml version="1.0" ?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" width="24px" height="24px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve"><path d="M14.095479,10.316482L22.286354,1h-1.940718l-7.115352,8.087682L7.551414,1H1l8.589488,12.231093L1,23h1.940717  l7.509372-8.542861L16.448587,23H23L14.095479,10.316482z M11.436522,13.338465l-0.871624-1.218704l-6.924311-9.68815h2.981339  l5.58978,7.82155l0.867949,1.218704l7.26506,10.166271h-2.981339L11.436522,13.338465z"/></svg><a href="https://x.com/Benny_techzie" target="_blank">X</a></li>
+            <li><img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Gmail"><a href="mailto:bennyworkcv@gmail.com">Gmail</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 BENNY. All rights reserved.</p>
+    </footer>
+</body>
+</html>
